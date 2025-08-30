@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layover Legends - Payment Hub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9fc;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    h1 { font-size: 2.2rem; color: #222; }
+    p { color: #555; }
+    .buttons { display: flex; flex-direction: column; gap: 12px; margin: 20px 0; width: 100%; max-width: 300px; }
+    .buttons a { text-decoration: none; background: #222; color: #fff; padding: 12px; border-radius: 8px; font-size: 1rem; transition: background 0.3s; }
+    .buttons a:hover { background: #555; }
+    #qrcode { margin-top: 30px; }
+    footer { margin-top: 40px; font-size: 0.9rem; color: #888; }
+  </style>
+</head>
+<body>
+  <h1>Layover Legends</h1>
+  <p>Support us by choosing your preferred payment method below:</p>
+
+  <div class="buttons">
+    <a href="mailto:romanyenterprisellc@gmail.com">💸 Zelle (romanyenterprisellc@gmail.com)</a>
+    <a href="https://cash.app/$LAYOVERLEGENDS" target="_blank">💵 Cash App ($LAYOVERLEGENDS)</a>
+    <a href="https://venmo.com/layoverlegends" target="_blank">📲 Venmo (@LAYOVERLEGENDS)</a>
+    <a href="https://paypal.me/layoverlegends" target="_blank">💳 PayPal (@LAYOVERLEGENDS)</a>
+  </div>
+
+  <div id="qrcode"></div>
+
+  <footer>Thank you for supporting Layover Legends ✈️</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script>
+    new QRCode(document.getElementById("qrcode"), {
+      text: "https://layover-legends-placeholder.netlify.app",
+      width: 180,
+      height: 180
+    });
+  </script>
+</body>
+</html>
