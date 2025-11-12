@@ -1,0 +1,12 @@
+const PAY_LINKS = {
+  square: "https://square.link/your-preorder-link",
+  paypal: "https://paypal.me/yourname/25",
+  cashapp: "https://cash.app/$yourcashtag/25",
+};
+
+const PAY_LINKS = {
+  square: "https://square.link/your-preorder-link",
+  paypal: "https://paypal.me/layoverlegends/25",
+  cashapp: "https://cash.app/$Layoverlegends/25",
+  venmo: "https://venmo.com/u/layoverlegends"
+};
