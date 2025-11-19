@@ -1,53 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Layover Legends - Payment Hub</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f9f9fc;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Layover Legends — Reflection & Travel (Swipe App)</title>
+  <meta name="theme-color" content="#0b1220">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js');
+      });
     }
-    h1 { font-size: 2.2rem; color: #222; }
-    p { color: #555; }
-    .buttons { display: flex; flex-direction: column; gap: 12px; margin: 20px 0; width: 100%; max-width: 300px; }
-    .buttons a { text-decoration: none; background: #222; color: #fff; padding: 12px; border-radius: 8px; font-size: 1rem; transition: background 0.3s; }
-    .buttons a:hover { background: #555; }
-    #qrcode { margin-top: 30px; }
-    footer { margin-top: 40px; font-size: 0.9rem; color: #888; }
-  </style>
+  </script>
 </head>
 <body>
-  <h1>Layover Legends</h1>
-  <p>Support us by choosing your preferred payment method below:</p>
+  <div class="app">
+    <div class="header">
+      <div>
+        <div class="brand">Layover Legends</div>
+        <div class="edition">Reflection & Travel Edition</div>
+        <div class="tagline">Your Next Adventure Awaits.</div>
+      </div>
+      <div class="controls">
+        <button class="btn" id="prev">← Prev</button>
+        <button class="btn" id="next">Next →</button>
+        <button class="btn" id="shuffle">Shuffle</button>
+        <button class="btn" id="theme">Theme</button>
+        <button class="btn" id="restart">Restart</button>
+        <button class="btn" id="share">Share</button>
+      </div>
+    </div>
 
-  <div class="buttons">
-    <a href="mailto:romanyenterprisellc@gmail.com">💸 Zelle (romanyenterprisellc@gmail.com)</a>
-    <a href="https://cash.app/$LAYOVERLEGENDS" target="_blank">💵 Cash App ($LAYOVERLEGENDS)</a>
-    <a href="https://venmo.com/layoverlegends" target="_blank">📲 Venmo (@LAYOVERLEGENDS)</a>
-    <a href="https://paypal.me/layoverlegends" target="_blank">💳 PayPal (@LAYOVERLEGENDS)</a>
+    <div class="deck">
+      <div class="card">
+        <h2 id="card-title">Loading…</h2>
+        <p id="card-text">Please wait.</p>
+      </div>
+    </div>
+
+    <div class="progress"></div>
+
+    <div class="footer">
+      <div>LayoverLegends.com • LegendsClub@LayoverLegends.com</div>
+      <div><a class="link" href="data.json" target="_blank" rel="noopener">View Deck JSON</a></div>
+    </div>
   </div>
 
-  <div id="qrcode"></div>
-
-  <footer>Thank you for supporting Layover Legends ✈️</footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-  <script>
-    new QRCode(document.getElementById("qrcode"), {
-      text: "https://layover-legends-placeholder.netlify.app",
-      width: 180,
-      height: 180
-    });
-  </script>
+  <div class="toast"></div>
+  <script src="app.js"></script>
 </body>
 </html>

@@ -1,0 +1,91 @@
+{
+  "brand": "Layover Legends",
+  "edition": "Reflection & Travel Edition",
+  "tagline": "Your Next Adventure Awaits.",
+  "cards": [
+    {
+      "title": "Wings of Change",
+      "text": "When was the last time a trip truly changed the way you see yourself?"
+    },
+    {
+      "title": "If These Bars Could Talk",
+      "text": "What unforgettable conversation did you have while traveling?"
+    },
+    {
+      "title": "Layovers & Lessons",
+      "text": "A delay that taught you patience or perspective\u2014what happened?"
+    },
+    {
+      "title": "Cultural Compass",
+      "text": "What culture surprised you in the most beautiful way\u2014and why?"
+    },
+    {
+      "title": "The Moment You Arrived",
+      "text": "Recall a moment you landed and thought: 'I\u2019m meant to be here.'"
+    },
+    {
+      "title": "Time Zones & Timelines",
+      "text": "If you could relive one travel day exactly\u2014what day is it?"
+    },
+    {
+      "title": "Lost & Found",
+      "text": "Something meaningful you lost\u2014and something unexpected you found."
+    },
+    {
+      "title": "Languages of Connection",
+      "text": "A kind gesture a stranger showed you abroad\u2014tell the story."
+    },
+    {
+      "title": "Passport to Peace",
+      "text": "A place that instantly calmed your spirit\u2014what made it peaceful?"
+    },
+    {
+      "title": "Your Next Adventure Awaits",
+      "text": "If your next trip were a life chapter, what\u2019s the title?"
+    },
+    {
+      "title": "The Taste of Travel",
+      "text": "A food or drink that instantly transports you\u2014where does it take you?"
+    },
+    {
+      "title": "Postcards to the Past",
+      "text": "Write a one-line postcard to your younger self from the road."
+    },
+    {
+      "title": "Unexpected Magic",
+      "text": "A small travel moment that felt like magic\u2014what happened?"
+    },
+    {
+      "title": "Between Departures",
+      "text": "What do you think about when waiting at the gate to board?"
+    },
+    {
+      "title": "The Things We Carry",
+      "text": "One item you never travel without\u2014and why it matters."
+    },
+    {
+      "title": "Nature\u2019s Remedy",
+      "text": "The most breathtaking natural wonder you\u2019ve seen\u2014what did it teach you?"
+    },
+    {
+      "title": "Mirror Miles",
+      "text": "Do you travel to escape or to discover? What have you learned?"
+    },
+    {
+      "title": "Soundtrack of a Journey",
+      "text": "One song that defines a trip or era\u2014and why that song?"
+    },
+    {
+      "title": "Midnight Memories",
+      "text": "A night on the road you\u2019ll never forget\u2014paint the scene."
+    },
+    {
+      "title": "Flight Paths & Fate",
+      "text": "Do trips happen for a reason\u2014or do we create the meaning?"
+    },
+    {
+      "title": "The Legend Within the Journey",
+      "text": "Fifty years from now, what lesson should your travels teach?"
+    }
+  ]
+}
